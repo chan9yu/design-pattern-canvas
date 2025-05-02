@@ -2,13 +2,7 @@ import { ChromeGrimpan, GrimpanBase, IEGrimpan } from "./Grimpan";
 import { ChromeGrimpanHistory, GrimpanHistory, IEGrimpanHistory } from "./GrimpanHistory";
 import { ChromeGrimpanMenu, GrimpanMenu, IEGrimpanMenu } from "./GrimpanMenu";
 
-export interface GrimpanFactory {
-	createGrimpan(canvas: HTMLCanvasElement): GrimpanBase;
-	createGrimpanMenu(grimpan: GrimpanBase): GrimpanMenu;
-	createGrimpanHistory(grimpan: GrimpanBase): GrimpanHistory;
-}
-
-export abstract class AbstractGrimpanFactory implements GrimpanFactory {
+export abstract class AbstractGrimpanFactory {
 	public abstract createGrimpan(canvas: HTMLCanvasElement): GrimpanBase;
 	public abstract createGrimpanMenu(grimpan: GrimpanBase): GrimpanMenu;
 	public abstract createGrimpanHistory(grimpan: GrimpanBase): GrimpanHistory;
