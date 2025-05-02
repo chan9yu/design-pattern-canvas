@@ -8,4 +8,5 @@ arrowParens: always
 trailingComma: none
 jsxSingleQuote: false
 bracketSameLine: false
-
+plugins:
+  - prettier-plugin-tailwindcss
