@@ -1,30 +1,32 @@
 {
-  "name": "design-pattern-canvas",
-  "private": true,
-  "version": "1.0.0",
-  "description": "🎨 Typescript 디자인 패턴 캔버스 그림판으로 학습",
-  "type": "module",
-  "packageManager": "pnpm@10.10.0",
-  "author": "chan9yu <dev.cgyeo@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chan9yu/design-pattern-canvas"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.25.1",
-    "eslint": "^9.25.1",
-    "eslint-config-prettier": "^10.1.2",
-    "eslint-plugin-prettier": "^5.2.6",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "globals": "^16.0.0",
-    "prettier": "^3.5.3",
-    "typescript": "~5.7.2",
-    "typescript-eslint": "^8.31.1",
-    "vite": "^6.3.1"
-  }
+	"name": "design-pattern-canvas",
+	"private": true,
+	"version": "1.0.0",
+	"description": "🎨 Typescript 디자인 패턴 캔버스 그림판으로 학습",
+	"type": "module",
+	"packageManager": "pnpm@10.10.0",
+	"author": "chan9yu <dev.cgyeo@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chan9yu/design-pattern-canvas"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"type-check": "tsc --noEmit -p ./tsconfig.json"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.25.1",
+		"eslint": "^9.25.1",
+		"eslint-config-prettier": "^10.1.2",
+		"eslint-plugin-prettier": "^5.2.6",
+		"eslint-plugin-simple-import-sort": "^12.1.1",
+		"globals": "^16.0.0",
+		"lefthook": "^1.11.12",
+		"prettier": "^3.5.3",
+		"typescript": "~5.7.2",
+		"typescript-eslint": "^8.31.1",
+		"vite": "^6.3.1"
+	}
 }
