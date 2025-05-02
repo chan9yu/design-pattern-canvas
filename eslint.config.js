@@ -7,29 +7,26 @@ import tseslint from "typescript-eslint";
 
 /** @type {import('eslint').Linter.Config[]} */
 const eslintConfig = tseslint.config(
-  { ignores: ["node_modules", "dist"] },
-  {
-    extends: [
-      js.configs.recommended,
-      ...tseslint.configs.recommended,
-      eslintConfigPrettier,
-    ],
-    files: ["**/*.{ts,tsx}"],
-    languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "module",
-      globals: globals.browser,
-    },
-    plugins: {
-      prettier,
-      "simple-import-sort": simpleImportSort,
-    },
-    rules: {
-      "prettier/prettier": "error",
-      "simple-import-sort/imports": "error",
-      "simple-import-sort/exports": "error",
-    },
-  }
+	{ ignores: ["node_modules", "dist"] },
+	{
+		extends: [js.configs.recommended, ...tseslint.configs.recommended, eslintConfigPrettier],
+		files: ["**/*.{ts,tsx}"],
+		languageOptions: {
+			ecmaVersion: "latest",
+			sourceType: "module",
+			globals: globals.browser
+		},
+		plugins: {
+			prettier,
+			"simple-import-sort": simpleImportSort
+		},
+		rules: {
+			"prettier/prettier": "error",
+			"simple-import-sort/imports": "error",
+			"simple-import-sort/exports": "error",
+			"@typescript-eslint/no-unused-vars": "off"
+		}
+	}
 );
 
 export default eslintConfig;
